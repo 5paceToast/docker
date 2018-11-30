@@ -1,5 +1,5 @@
 FROM spacetoast/base
 
-RUN apk add --no-cache asciidoctor hugo@toast
+RUN apk add --no-cache asciidoctor git hugo@toast
 
 CMD [ "hugo" ]
