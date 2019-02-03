@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:edge
 
 RUN wget -P /etc/apk/keys \
     https://build.toastin.space/toast@toastin.space.rsa.pub && \
