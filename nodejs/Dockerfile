@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/spacetoast/docker/base
+FROM spacetoast/alpine
 
 RUN apk add --no-cache nodejs-current
 

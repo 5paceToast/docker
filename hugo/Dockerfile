@@ -1,5 +1,5 @@
-FROM registry.gitlab.com/spacetoast/docker/base
+FROM spacetoast/alpine
 
-RUN apk add --no-cache asciidoctor git hugo@toast
+RUN apk add --no-cache asciidoctor git hugo
 
 CMD [ "hugo" ]

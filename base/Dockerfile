@@ -1,5 +1,3 @@
 FROM alpine:edge
 
-RUN wget -P /etc/apk/keys \
-    https://build.toastin.space/toast@toastin.space.rsa.pub && \
-    echo '@toast https://build.toastin.space/toast' >> /etc/apk/repositories
+RUN sh -c "tail -n1 /etc/apk/repositories | sed 's|edge/.*|edge/testing|' >> /etc/apk/repositories"
